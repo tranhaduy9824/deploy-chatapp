@@ -13,7 +13,7 @@ const { handleVideoCall } = require("./call");
 const socketHandler = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "http://localhost:5000",
+      origin: "https://deploy-chatapp-jjlk.onrender.com",
       methods: ["GET", "POST"],
     },
   });
