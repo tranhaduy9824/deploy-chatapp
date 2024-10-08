@@ -11,7 +11,7 @@ interface AvatarProps {
 function Avatar({ user, width = 50, height = 50, style }: AvatarProps) {
   return (
     <img
-      src={user?.avatar ? `http://localhost:5000/${user.avatar}` : avatarDefault}
+      src={user?.avatar ? `https://deploy-chatapp-jjlk.onrender.com/${user.avatar}` : avatarDefault}
       alt={user?.fullname}
       className="rounded-circle mr-3"
       style={{ border: "1px solid var(--bg-primary-gentle)", ...style }}
